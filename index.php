@@ -49,11 +49,11 @@ echo '<table>
 while ($row = mysqli_fetch_array($query))
 {
     echo '<tr>
-            <td>'.$row['id'].'</td>
-            <td>'.$row['hotel_name'].'</td>
-            <td>'.$row['hotel_address'],'</td>
-            <td>'.$row['hotel_location'],'</td>
-            <td>'.$row['hotel_rating'].'</td>
+            <td><br>'.$row['id'].'</td>
+            <td><br>'.$row['hotel_name'].'</td>
+            <td><br>'.$row['hotel_address'],'</td>
+            <td><br>'.$row['hotel_location'],'</td>
+            <td><br>'.$row['hotel_rating'].'</td>
         </tr>';
 }
 echo '
