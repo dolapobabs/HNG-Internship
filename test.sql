@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 18, 2017 at 02:57 AM
+-- Generation Time: Aug 18, 2017 at 07:27 PM
 -- Server version: 10.1.10-MariaDB
 -- PHP Version: 7.0.3
 
@@ -28,17 +28,21 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `test` (
   `id` int(10) NOT NULL,
-  `f_name` varchar(100) NOT NULL,
-  `l_name` varchar(100) NOT NULL,
-  `created` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
+  `hotel_name` varchar(100) NOT NULL,
+  `hotel_address` varchar(100) NOT NULL,
+  `hotel_location` varchar(100) NOT NULL,
+  `hotel_rating` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `test`
 --
 
-INSERT INTO `test` (`id`, `f_name`, `l_name`, `created`) VALUES
-(1, 'Adedolapo', 'Babatunde', '2017-08-17 23:00:00');
+INSERT INTO `test` (`id`, `hotel_name`, `hotel_address`, `hotel_location`, `hotel_rating`) VALUES
+(1, 'Super K Hotel', 'Along Idi-Odo, Beside St. Annes Church', 'Ibadan', 3),
+(2, 'Le Ville Hotel and Suites', 'Plot 3, Block 4, Opposite National Museum, Aleshinloye, Jericho, Nigeria', 'Ibadan', 5),
+(3, 'Lafia Hotel', 'Ibadan-Abeokuta Rd, Apata', 'Ibadan', 3),
+(4, 'Kakanfo Inn', '1, Nihinlola Street, Off Ring Road, Joyce B Road', 'Ibadan', 4);
 
 --
 -- Indexes for dumped tables
@@ -58,7 +62,7 @@ ALTER TABLE `test`
 -- AUTO_INCREMENT for table `test`
 --
 ALTER TABLE `test`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
