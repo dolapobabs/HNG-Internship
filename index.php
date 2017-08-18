@@ -18,7 +18,7 @@ $query = mysqli_query($conn, $sql);
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Hotels.ng Test</title>
+    <title>Hotels.ng Test by Dolapobabs</title>
 
     <h2>Hotels.ng Tests-- Babatunde Adedolapo</h2>
     <p>First Task for Hotels.ng Internship by Mark Essien</p>
