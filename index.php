@@ -21,10 +21,13 @@ $query = mysqli_query($conn, $sql);
 <head>
     <title>Hotels.ng Test</title>
 
-    <h2>Hotels.ng Tests-- Babatunde Adekunle</h2>
+    <h2>Hotels.ng Tests-- Babatunde Adedolapo</h2>
+    <p>First Task for Hotels.ng Internship by Mark Essien</p>
 </head>
 
 <body>
+<br>
+<br>
 <?php
  
 if (!$query) {
@@ -54,6 +57,15 @@ while ($row = mysqli_fetch_array($query))
 echo '
     </tbody>
 </table>';
+if ($conn->query($sql)==TRUE){
+
+    echo  "File Printed from Database Successfully!";
+} else {
+    echo "Error:" . $sql . "<br>".$conn->error;
+
+
+}
+
  
 
 mysqli_free_result($query);
