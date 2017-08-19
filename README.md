@@ -4,7 +4,7 @@
 #########################
 A PHP, MySQL test Repo for Hotels.ng Internship 
 ########################
-![Screenshot](https://http://res.cloudinary.com/dolapobabs/image/upload/v1503156845/hngsketch_vgzcul.png "Screenshot")
+![Screenshot](https://res.cloudinary.com/dolapobabs/image/upload/v1503156845/hngsketch_vgzcul.png "Screenshot")
 
 INSTALLATION
 -------------
